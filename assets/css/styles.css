@@ -188,6 +188,7 @@ a:hover, a:active {
     .section-background {
         top: -10vh;
         background-position-x: -10vw;
+        background-position-y: 10vh;
     }
  
 }
