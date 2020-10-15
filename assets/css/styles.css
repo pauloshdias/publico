@@ -1,0 +1,251 @@
+/* Base */
+body:default {
+    margin: 0px;
+    background-color: #FBFAF8;
+    line-height: 17px;
+    font-size: 14px;
+}
+li {
+    list-style-type: none;
+}
+ul {
+    padding: 0;
+}
+main {
+    margin: 0 3vw;
+}
+
+
+/* TYPEFACES */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+h1, h2 {
+    font-family: 'Bebas Neue', cursive;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.message {
+    text-align: center;
+    margin: auto 32px 32px 32px;
+}
+.message h2 {
+    line-height: 44px;
+}
+.price h2 {
+    line-height: 0px;
+    top: 40px;
+}
+body, h3, p, .header-wrapper .nav-menu {
+    font-family: 'Roboto', sans-serif;
+}
+h3, p {
+    color: #4F4F4F;
+}
+h3 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+}
+
+.nav-menu li {
+    font-weight: 700;
+    margin: auto 15px;
+}
+.header-wrapper, .menu, .nav-menu, .social-icons ul {
+    display: flex;
+    flex-direction: row;
+}
+
+/* COLORS */
+.primary-color {
+    color: #D10019;
+}
+.secondary-color {
+    color: white;
+}
+.text-color {
+color: #4F4F4F;;
+} 
+
+/* BUTTONS */
+.cta-button-wrapper, .button-background {
+    height: 104px;
+    width: 208px;
+}
+.cta-button-wrapper {
+    margin-bottom: 16px;
+}
+.cta {
+    width: 208px;
+}
+.cta-title {
+    text-align: center;
+}
+.cta-buttons {
+    display: flex;
+    flex-direction: column;
+}
+.cta-button {
+    position: absolute;
+    margin: 4px 16px;
+}
+.button-background {
+    background:rgba(209, 0, 25, 0.9);
+    border-radius: 10px;
+}
+a:hover, a:active {
+    background-color: rgba(167, 0, 19, 1);
+    border-radius: 10px;
+}
+.price {
+    display: flex;
+}
+.price p, .price h2 {
+    align-self: flex-end;
+    position: absolute;
+}
+
+.price p {
+    left: 56px;
+    top: 50px;
+    text-decoration: line-through;
+}
+.price-wrapper {
+    position: relative;
+    bottom: 70px;
+}
+.subscription {
+    width: 40%;
+    font-weight: 700;
+}
+.subscription-offer h3 {
+    width: 80px;
+    font-weight: 300;
+}
+.subscription-wrapper {
+    display: flex;
+    margin-bottom: 0px;
+    width: 184px;
+    justify-content: space-between;
+}
+
+/* ADVANTAGES */
+.advantages h3 {
+    text-align: center;
+}
+.advantages li {
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 20px;
+}
+.advantages {
+    margin-top: 216px;
+    margin-bottom: 32px;
+    
+}
+
+/* SOCIAL */
+.social-networks {
+    text-align: center;
+}
+.social-icons {
+    display: inline-block;
+    width: 212px;
+}
+.social-icons ul {
+    justify-content: space-between;
+}
+
+/* BACKGROUND */
+.section-wrapper {
+    position: relative;
+}
+
+.section-background {
+    background-image: url(/assets/img/background-image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    z-index: -1;
+    display: block;
+  width: 100vw;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-position-x: -35vw;
+}
+
+@media (min-width: 600px) {
+    .advantages {
+        width: 66vw;
+        margin: 15vh auto 5vh auto;
+    }
+    .section-background {
+        top: -10vh;
+        background-position-x: -10vw;
+    }
+ 
+}
+
+@media (min-width: 800px) {
+    main {
+        margin-left: 5vw;
+    }
+
+    /* CTA MESSAGE */
+    .message {
+        text-align: left;
+        margin-left: 0;
+    }
+    .message h2 {
+        width: 400px;
+    }
+    .message p {
+        width: 300px;
+    }
+    .cta-buttons {
+        flex-direction: row;
+    }
+    .cta-buttons a {
+        margin-right: 24px;
+    }
+    .cta-title{
+        text-align: left;
+    }
+    .social-networks {
+        text-align: left;
+    }
+
+    /* ADVANTAGES */
+    .advantages {
+        width: 450px;
+        margin: 15vh auto 5vh 0;
+    }
+    .advantages h3 {
+        text-align: left;
+        margin-top: 0px;
+    }
+    .section-background {
+        top: -10vh;
+        left: 0;
+        background-size: cover;
+        background-position-x: 15vw;
+        
+    }
+}
+@media (min-width: 1300px) {
+    .section-background {
+        width: 100%;
+        height: 1400px;
+    }
+}
+@media (min-width: 1300px) {
+    .section-background {
+        background-size: contain;
+    }
+}
