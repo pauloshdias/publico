@@ -167,7 +167,7 @@ a:hover, a:active {
 }
 
 .section-background {
-    background-image: url(/assets/img/background-image.png);
+    background-image: url(/publico/assets/img/background-image.png);
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
