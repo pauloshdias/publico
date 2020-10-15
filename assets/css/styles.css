@@ -235,7 +235,7 @@ a:hover, a:active {
         top: -10vh;
         left: 0;
         background-size: cover;
-        background-position-x: 15vw;
+        background-position: 15vw 10vh;
         
     }
 }
